@@ -10,6 +10,7 @@ using Gagan_Blog.Models;
 
 namespace Gagan_Blog.Controllers
 {
+    [RequireHttps]
     [Authorize]
     public class ManageController : Controller
     {

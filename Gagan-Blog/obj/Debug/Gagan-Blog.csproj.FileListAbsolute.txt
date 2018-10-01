@@ -118,3 +118,7 @@ C:\Users\SD11\Desktop\Gagan-Blog\Gagan-Blog\Gagan-Blog\obj\Debug\Gagan-Blog.cspr
 C:\Users\SD11\Desktop\Gagan-Blog\Gagan-Blog\Gagan-Blog\obj\Debug\Gagan-Blog.csproj.CopyComplete
 C:\Users\SD11\Desktop\Gagan-Blog\Gagan-Blog\Gagan-Blog\obj\Debug\Gagan-Blog.dll
 C:\Users\SD11\Desktop\Gagan-Blog\Gagan-Blog\Gagan-Blog\obj\Debug\Gagan-Blog.pdb
+C:\Users\SD11\Desktop\Gagan-Blog\Gagan-Blog\Gagan-Blog\bin\PagedList.dll
+C:\Users\SD11\Desktop\Gagan-Blog\Gagan-Blog\Gagan-Blog\bin\PagedList.Mvc.dll
+C:\Users\SD11\Desktop\Gagan-Blog\Gagan-Blog\Gagan-Blog\bin\PagedList.xml
+C:\Users\SD11\Desktop\Gagan-Blog\Gagan-Blog\Gagan-Blog\bin\PagedList.Mvc.xml

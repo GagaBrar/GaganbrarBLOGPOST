@@ -1,13 +1,17 @@
-﻿using System;
+﻿using Gagan_Blog.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 
 namespace Gagan_Blog.Controllers
-{
+{[RequireHttps]
     public class HomeController : Controller
     {
+        private ApplicationDbContext db = new ApplicationDbContext();
+
+
         public ActionResult Index()
         {
             return View();
@@ -17,7 +21,7 @@ namespace Gagan_Blog.Controllers
         {
             ViewBag.Message = "Your application description page.";
 
-            return View();
+            return View(db.Posts.ToList());
         }
 
         public ActionResult Contact()

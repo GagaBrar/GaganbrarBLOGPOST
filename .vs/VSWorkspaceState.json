@@ -1,0 +1,20 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\Gagan-Blog",
+    "\\Gagan-Blog\\Controllers",
+    "\\Gagan-Blog\\Views",
+    "\\Gagan-Blog\\Views\\Blogposts",
+    "\\Gagan-Blog\\Views\\Shared",
+    "\\packages",
+    "\\packages\\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0",
+    "\\packages\\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\\content",
+    "\\packages\\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\\content\\net45",
+    "\\packages\\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\\content\\net46",
+    "\\packages\\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\\tools",
+    "\\packages\\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\\tools\\Roslyn45",
+    "\\packages\\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\\tools\\RoslynLatest"
+  ],
+  "SelectedNode": "\\Gagan-Blog\\Controllers\\HomeController.cs",
+  "PreviewInSolutionExplorer": false
+}

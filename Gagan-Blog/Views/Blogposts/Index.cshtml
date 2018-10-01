@@ -1,13 +1,20 @@
-﻿@model IEnumerable<Gagan_Blog.Models.Blogpost>
+﻿@using PagedList;
+@using PagedList.Mvc;
+@model IEnumerable<Gagan_Blog.Models.Blogpost>
 
 @{
     ViewBag.Title = "Index";
+    var pagedList = (IPagedList)Model;
+
 }
 
 
 <p>
     @Html.ActionLink("Create New", "Create")
+
+
 </p>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -77,7 +84,7 @@
         <!-- /.container -->
     </nav>
 
-    
+
     <!-- jQuery -->
     <script src="~/Scripts/jquery.min.js"></script>
 
@@ -94,6 +101,13 @@
 </body>
 
 </html>
+
+@using (Html.BeginForm("Index", "blogposts", FormMethod.Get))
+{
+    <input type="text" class="form-control" name="searchString" placeholder="Search for posts" value="@ViewBag.SearchString" />
+    <input type="submit" class="btn btn-primary" value="Search!" />
+}
+
 
 <table class="table">
     <tr>
@@ -124,7 +138,6 @@
     @foreach (var item in Model)
     {
         <tr>
-
             <td>
                 @Html.DisplayFor(modelItem => item.Created)
             </td>
@@ -138,7 +151,7 @@
                 @Html.DisplayFor(modelItem => item.Slug)
             </td>
             <td>
-                @Html.Raw(item.Body)
+                @Html.DisplayFor(modelItem => item.Body)
             </td>
 
             <td>
@@ -146,7 +159,6 @@
 
                 <img class="img-responsive" src="@item.MediaUrl" alt="">
 
-            </td>
             <td>
                 @Html.DisplayFor(modelItem => item.Published)
             </td>
@@ -158,4 +170,7 @@
         </tr>
     }
 
+
 </table>
+Page @(pagedList.PageCount < pagedList.PageNumber ? 0 : pagedList.PageNumber) of @pagedList.PageCount
+@Html.PagedListPager(pagedList, page => Url.Action("Index", new { page, ViewBag.SearchString }))
